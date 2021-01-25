@@ -1,4 +1,0 @@
-
-class Misc1Test {
-
-}
