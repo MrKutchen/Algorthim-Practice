@@ -39,7 +39,7 @@ public class Misc1 {
         // convert String to character array
         // by using toCharArray
         char[] stringAsCharArray = input.toCharArray();
-
+        //reverse it
         for (int i = stringAsCharArray.length - 1; i >= 0; i--) {
             result[index] = stringAsCharArray[i];
             index++;
