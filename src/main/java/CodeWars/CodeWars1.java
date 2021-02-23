@@ -17,7 +17,7 @@ public class CodeWars1 {
         return count;
     }
 
-    public static String camelCase(String input) {
+    public String camelCase(String input) {
         char[] characters = input.toCharArray();
         StringBuilder result = new StringBuilder();
 
@@ -31,7 +31,13 @@ public class CodeWars1 {
         return result.toString();
     }
 
-    public static String camelCase2(String input) {
+    public String camelCase2(String input) {
         return input.replaceAll("([A-Z])", " $1");
+    }
+
+    public static long findNb(long m) {
+        long mm = 0, n = 0;
+        while (mm < m) mm += ++n * n * n;
+        return mm == m ? n : -1;
     }
 }

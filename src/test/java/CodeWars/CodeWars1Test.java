@@ -22,4 +22,21 @@ public class CodeWars1Test {
         assertEquals( "Incorrect", "camel Casing Test", codeWars1.camelCase2("camelCasingTest"));
         assertEquals( "Incorrect", "camelcasingtest", codeWars1.camelCase2("camelcasingtest"));
     }
+
+    @Test
+    public void findNbtest1() {
+        assertEquals(2022, codeWars1.findNb(4183059834009L));
+    }
+    @Test
+    public void findNbtest2() {
+        assertEquals(-1, codeWars1.findNb(24723578342962L));
+    }
+    @Test
+    public void findNbtest3() {
+        assertEquals(4824, codeWars1.findNb(135440716410000L));
+    }
+    @Test
+    public void findNbtest4() {
+        assertEquals(3568, codeWars1.findNb(40539911473216L));
+    }
 }
